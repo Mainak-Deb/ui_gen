@@ -1,6 +1,9 @@
 import React from 'react'
 
-const SubmitTab = () => {
+const SubmitTab = ({setIsGenerated}) => {
+
+
+  
   return (
     <div className='h-[10%] border border-white flex flex-row'>
       <div className='h-full w-[80%]'>
@@ -8,7 +11,7 @@ const SubmitTab = () => {
       </div>
       <div className='h-full w-[20%] flex flex-col'>
         <input type="file"  className='h-1/2 bg-slate-600'/>
-        <button className='bg-green-200 text-white h-1/2'>Send</button>
+        <button  className='bg-green-200 text-black h-1/2'>Send</button>
       </div>
     </div>
   )

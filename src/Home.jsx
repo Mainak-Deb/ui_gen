@@ -14,6 +14,7 @@ import Right from "./components/Right";
 
 export function Home() {
   const refs = useRef();
+  const [isGenerated, setIsGenerated]=useState(false);
 
   const [rawcode , setrawcode] = useState({
     "html": `<!DOCTYPE html>
@@ -22,11 +23,11 @@ export function Home() {
                   <meta charset="UTF-8">
                   <meta name="viewport" content="width=device-width, initial-scale=1.0">
                   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-                  <title>HTML 5 Boilerplate</title>
+                  <title>UIgen</title>
                   <link rel="stylesheet" href="style.css">
                 </head>
                 <body>
-                <h1>Hello Multiverse </h1>
+                
                 <script src="index.js"></script>
                 </body>
   </html>`,
@@ -57,7 +58,7 @@ export function Home() {
     <div className="className='w-[100vw] h-[100vh]">
       <PanelGroup direction="horizontal" id="group" className='w-full h-full bg-black text-white p'>
         <Panel id="left-panel" minSize={15} className="h-full border-2 border-double border-blue-200 m-1 rounded-md" >
-          <Left rawcode={rawcode} setrawcode={setrawcode} ></Left>
+          <Left rawcode={rawcode} setrawcode={setrawcode} isGenerated={isGenerated} setIsGenerated={setIsGenerated} ></Left>
         </Panel>
         <PanelResizeHandle id="resize-handle" className="border border-dashed border-blue-200" />
         <Panel id="right-panel" minSize={15} className="h-full border-2 border-double border-blue-200 m-1 rounded-md" >
