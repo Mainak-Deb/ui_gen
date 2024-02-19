@@ -35,7 +35,8 @@ export function Home() {
     "css": `body { font-family: Helvetica, Arial, sans-serif; text-align: center;}
             img { margin: 10px; }
             `,
-    "js": `//js code here`
+    "javascript": `//js code here
+    console.log("working fine");`
 
   })
 

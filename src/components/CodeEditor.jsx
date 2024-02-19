@@ -15,7 +15,7 @@ const CodeEditor = ({ rawcode, setrawcode }) => {
       <div className='h-[40px] bg-fuchsia-900 flex flex-row justify-start p-1 border border-fuchsia-200'>
         <button className='px-2 w-[100px] bg-fuchsia-600 hover:bg-fuchsia-800 rounded-md mx-1 border border-white' onClick={() => setfile("html")}>index.html</button>
         <button className='px-2 w-[100px] bg-yellow-400  hover:bg-yellow-800 rounded-md mx-1 border border-white' onClick={() => setfile("css")}>style.css</button>
-        <button className='px-2 w-[100px] bg-green-400 hover:bg-green-800 rounded-md mx-1 border border-white' onClick={() => setfile("js")}>script.js</button>
+        <button className='px-2 w-[100px] bg-green-400 hover:bg-green-800 rounded-md mx-1 border border-white' onClick={() => setfile("javascript")}>script.js</button>
       </div>
       <div className='h-full w-full'>
         {/* <textarea 
