@@ -1,11 +1,10 @@
 
-function fetchHTML(text) {
+export function fetchHTML(text) {
     const regex = /```html\s+(.*?)\s+```/s;
     const match = text.match(regex);
 
     if (match) {
         const extractedCode = match[1];
-        console.log(extractedCode);
         return extractedCode;
     } else {
         console.log("No HTML code found.");
@@ -14,13 +13,12 @@ function fetchHTML(text) {
 }
 
 
-function fetchCSS(text) {
+export  function fetchCSS(text) {
     const regex = /```css\s+(.*?)\s+```/s;
     const match = text.match(regex);
 
     if (match) {
         const extractedCode = match[1];
-        console.log(extractedCode);
         return extractedCode;
     } else {
         console.log("No css code found.");
@@ -30,13 +28,12 @@ function fetchCSS(text) {
 
 
 
-function fetchJS(text) {
+export  function fetchJS(text) {
     const regex = /```js\s+(.*?)\s+```/s;
     const match = text.match(regex);
 
     if (match) {
         const extractedCode = match[1];
-        console.log(extractedCode);
         return extractedCode;
     } else {
         console.log("No js code found.");
@@ -44,5 +41,15 @@ function fetchJS(text) {
     }
 }
 
+export function htmlBodyExtractor(code){
+    const regex = /<body>\s+(.*?)\s+<\/body>/s;
+    const match = code.match(regex);
 
-export default {fetchHTML, fetchCSS, fetchJS};
+    if (match) {
+        const extractedCode = match[1];
+        return extractedCode;
+    } else {
+        console.log("No HTML code found.");
+        return ""
+    }
+}

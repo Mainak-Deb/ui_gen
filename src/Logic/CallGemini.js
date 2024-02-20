@@ -78,6 +78,17 @@ const callGemini= async ({image, prompt})=>{
             });
       
             const res =response.data.candidates[0].content.parts[0].text;
+
+
+            // const response = await axios.get('http://127.0.0.1:5000/', {
+            //   headers: {
+            //     'Content-Type': 'aplication/json',
+            //   },
+            // });
+      
+            // const res =response.data.data.text_content;
+
+            
             return res;
           } catch (error) {
             console.error('Error generating description:', error);
@@ -106,6 +117,7 @@ const callGemini= async ({image, prompt})=>{
                 'Content-Type': 'aplication/json',
               },
             });
+
       
             const res =response.data.candidates[0].content.parts[0].text;
             return res;

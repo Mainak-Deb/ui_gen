@@ -1,0 +1,162 @@
+ ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="nn">Nick Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="nn" name="nickname" placeholder="Your nick name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="email" name="email" placeholder="Your email..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pwd">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="pwd" name="password" placeholder="Your password..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="dob">Date of Birth</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="dob" name="dob">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="col-75">
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Others</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobile">Mobile</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="mobile" name="mobile" placeholder="Your mobile number..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="address" name="address" placeholder="Your address.."></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+```
+
+```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.col-25 {
+    width: 25%;
+    margin-right: 5px;
+}
+
+.col-75 {
+    width: 75%;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=tel], textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+input[type=radio] {
+    margin-right: 5px;
+}
+
+input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+    background-color: #45a049;
+}
+```
+
+```js
+// 
+```

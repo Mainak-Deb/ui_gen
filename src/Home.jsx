@@ -36,7 +36,7 @@ export function Home() {
             img { margin: 10px; }
             `,
     "javascript": `//js code here
-    console.log("working fine");`
+console.log("working fine");`
 
   })
 
